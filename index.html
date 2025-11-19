@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBlog Feed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+
+
+    <div class="lg:hidden flex items-center justify-between p-4 bg-white shadow">
+        <h1 class="text-2xl font-bold">DevBlog</h1>
+
+        <button id="menuBtn" class="p-2 bg-gradient-to-r from-blue-700 to-purple-700 text-white rounded">
+            ☰
+        </button>
+    </div>
+
+    <div class="flex">
+    
+        <aside id="sidebar" class="w-64 h-screen bg-white border-r border-gray-200 p-5 fixed z-50 transform -translate-x-full lg:translate-x-0 transition-all duration-300">
+
+          
+            <div class="flex gap-4 items-center">
+                <button class="bg-gradient-to-r from-blue-700 to-purple-700 text-white p-3 rounded-lg">
+                <>
+                </button>
+
+                <div>
+                    <h1 class="text-2xl font-bold">DevBlog</h1>
+                    <p class="text-xs text-gray-500">JSON Explorer</p>
+                </div>
+            </div>
+
+         
+            <ul class="space-y-2 mt-6">
+           
+                <li class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer hover:bg-gradient-to-r from-blue-700 to-purple-700 hover:text-white">
+                    <div class="flex items-center gap-2">
+                        <img class="w-[20px] rounded-full"
+                            src="https://cdn.pixabay.com/photo/2018/11/13/21/44/instagram-3814060_960_720.png" alt="">
+                        <a href="./index.html">Feed</a>
+                    </div>
+                    <span class="text-sm  text-purple-600 px-2   bg-gray-200 px-2 rounded-full">100</span>
+                </li>
+
+              
+                <li class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer hover:bg-gradient-to-r from-blue-700 to-purple-700 hover:text-white">
+                    <div class="flex items-center gap-2">
+                        <img class="w-[20px] rounded-full" src="https://static.thenounproject.com/png/2232156-200.png"
+                            alt="">
+                        <span>Explorer</span>
+                    </div>
+                    <span class="text-sm  text-purple-600 px-2   bg-gray-200 px-2 rounded-full">5K</span>
+                </li>
+
+       
+                <li class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer hover:bg-gradient-to-r from-blue-700 to-purple-700 hover:text-white">
+                    <div class="flex items-center gap-2">
+                        <img class="w-[20px] rounded-full"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-lfUOxcO1DmNargznbcDMxXpApK7jAEIwQ&s"
+                            alt="">
+                        <span>Albums</span>
+                    </div>
+                    <span class="text-sm  text-purple-600 px-2   bg-gray-200 px-2 rounded-full">100</span>
+                </li>
+
+           
+                <li class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer hover:bg-gradient-to-r from-blue-700 to-purple-700 hover:text-white">
+                    <div class="flex items-center gap-2">
+                        <img class="w-[20px]"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvFTeFcLvcODuzCQN1S31Z45kaWgKt21Y7-w&s"
+                            alt="">
+                        <span>Todos</span>
+                    </div>
+                    <span class="text-sm  text-purple-600 px-2   bg-gray-200 px-2 rounded-full">200</span>
+                </li>
+
+                <li class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer hover:bg-gradient-to-r from-blue-700 to-purple-700 hover:text-white">
+                    <div class="flex items-center gap-2">
+                        <img class="w-[20px]"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3xUN_XXNxIEDiDNsF0UAoRVIJ39r937PoyQ&s"
+                            alt="">
+                        <a href="./page/user.html">Users</a>
+                    </div>
+                    <span class="text-sm  text-purple-600 px-2   bg-gray-200 px-2 rounded-full">200</span>
+                </li>
+                <li
+                    class="flex pl-4 ">
+                    <div class="">
+                        <button><></button>
+                    </div>
+                    <span class="text-sm  px-2">API Testing</span>
+                </li>
+            </ul>
+        </aside>
+
+   
+        <main class="flex-1 lg:ml-64 bg-gray-50 min-h-screen ">
+            <div class="px-10 py-6 border-b border-gray-200 bg-white shadow-sm fixed w-full z-10">
+                <h1 class="text-3xl font-semibold text-center ">Feed</h1>
+               
+            </div>
+
+            <div id="feed" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-24">
+           
+            </div>
+        </main>
+
+    </div>
+
+ 
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const sidebar = document.getElementById("sidebar");
+
+        menuBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("-translate-x-full");
+        });
+    </script>
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/comment.js"></script>
+
+</body>
+
+</html>
+
