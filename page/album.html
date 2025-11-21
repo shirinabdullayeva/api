@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex min-h-screen">
+    <aside id="sidebar"
+        class="w-64 h-screen bg-white border-r border-gray-200 p-5 fixed z-50 transform-translate-x-full lg:translate-x-0 transition-all duration-300">
+    
+    
+        <div class="flex gap-4 items-center mb-6">
+            <button class="bg-gradient-to-r from-blue-700 to-purple-700 text-white p-3 rounded-xl shadow-md">
+                <>
+            </button>
+    
+            <div>
+                <h1 class="text-2xl font-bold">DevBlog</h1>
+                <p class="text-xs text-gray-500">JSON Explorer</p>
+            </div>
+        </div>
+    
+    
+        <ul class="space-y-2">
+    
+            <li
+                class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer hover:bg-gradient-to-r from-blue-700 to-purple-700 hover:text-white ">
+                <div class="flex items-center gap-3">
+                    <img class="w-5 h-5 rounded-full"
+                        src="https://cdn.pixabay.com/photo/2018/11/13/21/44/instagram-3814060_960_720.png">
+                    <a href="../index.html">Feed</a>
+                </div>
+                <span class="text-sm bg-gray-100 text-purple-700 px-2 py-0.5 rounded-full">100</span>
+            </li>
+    
+            <li
+                class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer  hover:bg-gradient-to-r from-blue-700 to-purple-700 hover:text-white">
+                <div class="flex items-center gap-3">
+                    <img class="w-5 h-5 rounded-full" src="https://static.thenounproject.com/png/2232156-200.png">
+                    <a href="../page/exploer.html">Explorer</a>
+                </div>
+                <span class="text-sm bg-gray-200 text-purple-700 px-2 py-0.5 rounded-full">5K</span>
+            </li>
+    
+            <li
+                class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer  hover:bg-gradient-to-r from-blue-700 to-purple-700 hover:text-white">
+                <div class="flex items-center gap-3">
+                    <img class="w-5 h-5 rounded-full"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-lfUOxcO1DmNargznbcDMxXpApK7jAEIwQ&s">
+                    <a href="../page/album.html">Albums</a>
+                </div>
+                <span class="text-sm bg-gray-200 text-purple-700 px-2 py-0.5 rounded-full">100</span>
+            </li>
+    
+            <li
+                class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer  hover:bg-gradient-to-r from-blue-700 to-purple-700 hover:text-white">
+                <div class="flex items-center gap-3">
+                    <img class="w-5 h-5 rounded-full"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvFTeFcLvcODuzCQN1S31Z45kaWgKt21Y7-w&s">
+                    <a href="../page/todos.html">Todos</a>
+                </div>
+                <span class="text-sm bg-gray-200 text-purple-700 px-2 py-0.5 rounded-full">200</span>
+            </li>
+    
+            <li
+                class="flex items-center justify-between px-4 py-2 rounded-lg cursor-pointer  hover:bg-gradient-to-r from-blue-700 to-purple-700 hover:text-white">
+                <div class="flex items-center gap-3">
+                    <img class="w-5 h-5 rounded-full"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3xUN_XXNxIEDiDNsF0UAoRVIJ39r937PoyQ&s">
+                    <a href="../page/user.html">Users</a>
+                </div>
+                <span class="text-sm bg-gray-200 text-purple-700 px-2 py-0.5 rounded-full">200</span>
+            </li>
+    
+            <li class="flex items-center gap-3 px-4 py-2">
+                <button>
+                    <>
+                </button>
+                <span class="text-sm">API Testing</span>
+            </li>
+    
+        </ul>
+    </aside>
+
+<main class="flex-1 lg:ml-64 bg-gray-50 min-h-screen p-6">
+
+
+    <header class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-900">Albums</h2>
+        <p id="albumCount" class="text-sm text-gray-500 mt-1">0 albums</p>
+    </header>
+
+ 
+    <div id="albumGrid" class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+ 
+    </div>
+
+</main>
+    </div>
+
+    <script src="../js/album.js"></script>
+</body>
+
+</html>
